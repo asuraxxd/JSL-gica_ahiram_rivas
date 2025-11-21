@@ -122,6 +122,16 @@ exercici8(6)
 
 //     9.- Realitza una funció que, utilitzant bucles, mostri per pantalla el següent patró:
 
+function exercici9() {
+    let line = "";
+
+    for (let i = 1; i <= 5; i++) {
+        line += "* ";
+        console.log(line);
+    }
+}
+exercici9()
+
 
 //     10.- Utilitza un do..while per sumar els múltiples de 3 i 5 fins al número 1000.
 
