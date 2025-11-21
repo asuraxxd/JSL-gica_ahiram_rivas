@@ -113,6 +113,12 @@ exercici7(15,8,44)
 
 //     8.- Donat un enter (x), fes un bucle que digui des del 0 a x, quins són parells i quins senars.
 
+function exercici8(x) {
+    for (let i = 0; i <= x; i++) {
+        console.log(i, i % 2 === 0 ? "Parell" : "Senar");
+    }
+}
+exercici8(6)
 
 //     9.- Realitza una funció que, utilitzant bucles, mostri per pantalla el següent patró:
 
