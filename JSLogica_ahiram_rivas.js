@@ -88,6 +88,18 @@ exercici5(20)
 
 //     6.- Donat un String (x), sumar els caràcters que siguin números.
 
+function exercici6(str) {
+    let suma = 0;
+
+    for (let c of str) {
+        if (!isNaN(c) && c !== " ") {
+            suma += Number(c);
+        }
+    }
+
+    console.log("Suma:", suma);
+}
+exercici6("hola1234")
 
 //     7.- Donat tres enters, ordena de major a menor.
 
