@@ -71,6 +71,20 @@ exercici4(30)
 //     5.- Donat un enter (x), troba el màxim número n tal que 1+2+3+...+n <= x
 //     Exemple: si x=15, n seria 5 ( 1 + 2 +3 +4 +5 = 15)
 
+function exercici5(x) {
+    let suma = 0;
+    let n = 0;
+
+    while (suma + (n + 1) <= x) {
+        n++;
+        suma += n;
+    }
+
+    console.log("n =", n);
+}
+
+exercici5(20)
+
 
 //     6.- Donat un String (x), sumar els caràcters que siguin números.
 
