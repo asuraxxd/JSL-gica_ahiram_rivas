@@ -67,7 +67,6 @@ function exercici4(num) {
 exercici4(30)
 
 
-
 //     5.- Donat un enter (x), troba el màxim número n tal que 1+2+3+...+n <= x
 //     Exemple: si x=15, n seria 5 ( 1 + 2 +3 +4 +5 = 15)
 
@@ -99,10 +98,18 @@ function exercici6(str) {
 
     console.log("Suma:", suma);
 }
+
 exercici6("hola1234")
 
 //     7.- Donat tres enters, ordena de major a menor.
 
+function exercici7(a, b, c) {
+    let nums = [a, b, c];
+    nums.sort((x, y) => y - x);
+    console.log(nums);
+}
+
+exercici7(15,8,44)
 
 //     8.- Donat un enter (x), fes un bucle que digui des del 0 a x, quins són parells i quins senars.
 
