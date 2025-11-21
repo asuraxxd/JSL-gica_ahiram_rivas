@@ -5,6 +5,7 @@ function exercici1(num) {
     if (num % 7 === 0) console.log(num + " es multiple de 7");
     if (num % 3 !== 0 && num % 7 !== 0) console.log(num + " no és multiple de 3 ni de 7");
 }
+
 exercici1(9)
 
 // 2.- Donats dos enters (x, y), dir quins d’ells estan en el rang de 10 a 50 inclosos. Utilitza un operador ternari.
@@ -15,7 +16,8 @@ function exercici2(x, y) {
     console.log(resultatX);
     console.log(resultatY);
 }
-exercici2(20,30)
+
+exercici2(20, 30)
 
 // 3.- Donat un enter (x), mostra per pantalla la qualificació de l’examen:
 //     - [0, 4,99] = Suspès
@@ -23,6 +25,21 @@ exercici2(20,30)
 //     - [6, 6,99] = Bé
 //     - [7, 8.99] = Notable
 //     - [9, 10] = Excel·lent
+
+function exercici3(x) {
+    if (x < 0 || x > 10) {
+        console.log("Nota no vàlida");
+        return;
+    }
+
+    if (x < 5) console.log("Suspès");
+    else if (x < 6) console.log("Suficient");
+    else if (x < 7) console.log("Bé");
+    else if (x < 9) console.log("Notable");
+    else console.log("Excel·lent");
+}
+
+exercici3(7)
 
 
 // 4.- Modifica l’exercici 1, perquè mostri el text: és múltiple de 3, de 7 o de 3 i 7 utilitzant un switch.
