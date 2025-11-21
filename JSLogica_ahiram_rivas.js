@@ -9,6 +9,13 @@ exercici1(9)
 
 // 2.- Donats dos enters (x, y), dir quins d’ells estan en el rang de 10 a 50 inclosos. Utilitza un operador ternari.
 
+function exercici2(x, y) {
+    let resultatX = (x >= 10 && x <= 50) ? "x està dins del rang" : "x està fora del rang";
+    let resultatY = (y >= 10 && y <= 50) ? "y està dins del rang" : "y està fora del rang";
+    console.log(resultatX);
+    console.log(resultatY);
+}
+exercici2(20,30)
 
 // 3.- Donat un enter (x), mostra per pantalla la qualificació de l’examen:
 //     - [0, 4,99] = Suspès
