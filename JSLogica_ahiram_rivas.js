@@ -44,6 +44,29 @@ exercici3(7)
 
 // 4.- Modifica l’exercici 1, perquè mostri el text: és múltiple de 3, de 7 o de 3 i 7 utilitzant un switch.
 
+function exercici4(num) {
+    let resultat = "";
+
+    switch (true) {
+        case (num % 3 === 0 && num % 7 === 0):
+            resultat = "És múltiple de 3 i 7";
+            break;
+        case (num % 3 === 0):
+            resultat = "És múltiple de 3";
+            break;
+        case (num % 7 === 0):
+            resultat = "És múltiple de 7";
+            break;
+        default:
+            resultat = "No és múltiple de 3 ni de 7";
+    }
+
+    console.log(resultat);
+}
+
+exercici4(30)
+
+
 
 //     5.- Donat un enter (x), troba el màxim número n tal que 1+2+3+...+n <= x
 //     Exemple: si x=15, n seria 5 ( 1 + 2 +3 +4 +5 = 15)
