@@ -151,5 +151,17 @@ exercici10()
 
 //     11.- Modifica l’exercici 9 perquè només mostri les línies amb estrelles imparelles. Utilitza la sentència continue.
 
+function exercici11() {
+    let line = "";
+
+    for (let i = 1; i <= 5; i++) {
+        line += "* ";
+
+        if (i % 2 === 0) continue;
+
+        console.log(line);
+    }
+}
+exercici11()
 
 //     12.- Donat un enter de longitud par, intercanvia els dígits adjacents. Exemple: 123456 → 214365
