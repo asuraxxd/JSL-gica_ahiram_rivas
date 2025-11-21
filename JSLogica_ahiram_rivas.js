@@ -165,3 +165,15 @@ function exercici11() {
 exercici11()
 
 //     12.- Donat un enter de longitud par, intercanvia els dígits adjacents. Exemple: 123456 → 214365
+
+function exercici12(num) {
+    let s = String(num);
+    let result = "";
+
+    for (let i = 0; i < s.length; i += 2) {
+        result += s[i + 1] + s[i];
+    }
+
+    console.log(result);
+}
+exercici12(123456)
